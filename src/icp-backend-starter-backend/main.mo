@@ -1,12 +1,14 @@
-// Prueba
+// Nombre: Alan
+// Pais: Mexico
+// Experiencia: Principiante
+actor Nombre {
+ var nombre: Text = "";
 
-actor Echo {
-
-  // Say the given phase.
-  public query func say(phrase : Text) : async Text {
-    return phrase;
+  public query func obtenerNombre(): async Text {
+   return nombre;
   };
+
+  public func guardarNombre(name: Text) {
+   nombre := name;
+  }; 
 };
-
-
- // Notificaciones
